@@ -1,0 +1,35 @@
+<html>
+
+<link rel="stylesheet" href="stylenavigation.css">
+
+<ul class="navbar" align=left><font size=4>
+<li><a href="index.html">Back</a></li>
+</ul>
+
+<script>
+
+
+function validateForm() {
+  var x = document.forms["myForm"]
+["psswd"].value;
+  if (x == "Vednoobpro") {
+    alert("Correct password");
+           return true;
+  }  
+ else {alert("Wrong password");
+        return false;}
+}
+
+
+</script>
+
+<form name="myForm" action='OrigamiH3.html' 
+onsubmit="return validateForm()" 
+method="post">
+
+
+Enter Password : <input type="text"
+ name="psswd"></form>
+
+
+</html>
